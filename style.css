@@ -481,6 +481,10 @@ input, textarea, select {
 .dashboard {
     margin-top: 6rem;
 }
+
+.sidebar_toggle {
+    display: none;
+}
 .dashboard_container {
     display: grid;
     grid-template-columns: 14rem auto;
@@ -674,13 +678,41 @@ input, textarea, select {
     padding: 3rem;
   }
 
+  /**==============Dashboard==================**/
+.dashboard_container {
+    grid-template-columns: 4.3rem auto;
+    padding: 0;
+    background: transparent;
+}
+.dashboard aside {
+    /*background: var(--color-primary);*/
+
+}
+
+.dashboard aside h5 {
+    display: none;
+}
+.dashboard main table thead {
+    display: none;
+}
+
+.dashboard main table tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard main table tr:nth-child(even) {
+    background: var(--color-gray-900);
+}
+
+.dashboard main table tr:hover td {
+    background: transparent;
+}
+
+
    
 }
 
-/**==============Dashboard==================**/
-.dashboard_container {
-    grid-template-columns: 4.5rem auto;
-}
 
 
 
@@ -728,6 +760,45 @@ input, textarea, select {
 /**==============General Form==================**/
   .form_section-container {
     padding: 0;
+  }
+
+  /**==============Dashboard=================**/
+  .dashboard {
+    margin-top: 5rem;
+  }
+  .dashboard_container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .dashboard main {
+    margin: 0;
+  }
+
+  .dashboard main h2 {
+    margin-top: 1rem;
+  }
+
+  .dashboard aside {
+    position: fixed;
+    box-shadow: 2rem 0 4rem rgba(0,0,0,0.4);
+    left: 0;
+    height: 100vh;
+    transition: var(--transition);
+    background: var(--color-primary);
+  }
+
+  .dashboard .sidebar_toggle {
+    display: inline-block;
+    background: var(--color-primary-variant);
+    color: var(--color-white);
+    z-index: 1;
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50% 0 0 50%;
+    right: 0;
+    bottom: 4rem;
   }
 }
 
