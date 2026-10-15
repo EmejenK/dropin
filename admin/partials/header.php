@@ -1,5 +1,5 @@
 <?php
-require '../config/database.php';
+require 'config/database.php';
 ?>
 
 
@@ -27,10 +27,10 @@ require '../config/database.php';
                 <li><a href="<?= ROOT_URL ?>about.php">About</a></li>
                 <li><a href="<?= ROOT_URL ?>services.php">Services</a></li>
                 <li><a href="<?= ROOT_URL ?>contact.php">Contact</a></li>
-                <!--<li><a href="<?= ROOT_URL ?>sign-in.html">Sign In</a></li>--->
+                <li><a href="<?= ROOT_URL ?>sign-in.php">Sign In</a></li>
                 
                 <!---------Profile----------->
-                <li class="nav-profile">
+                <!--<li class="nav-profile">
                     <div class="avatar">
                         <img src="images/avatar1.png">
                     </div>
@@ -38,7 +38,7 @@ require '../config/database.php';
                         <li><a href="<?= ROOT_URL ?>admin/index.php">Dashboard</a></li>
                         <li><a href="<?= ROOT_URL ?>logout.php">Logout</a></li>
                     </ul>
-                </li>
+                </li>-->
             </ul>
 
             <!---------Humburger----------->

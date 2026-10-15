@@ -27,7 +27,7 @@ require 'config/database.php';
                 <li><a href="<?= ROOT_URL ?>about.php">About</a></li>
                 <li><a href="<?= ROOT_URL ?>services.php">Services</a></li>
                 <li><a href="<?= ROOT_URL ?>contact.php">Contact</a></li>
-                <!--<li><a href="<?= ROOT_URL ?>sign-in.html">Sign In</a></li>--->
+                <!--<li><a href="<?= ROOT_URL ?>sign-in.php">Sign In</a></li>--->
                 
                 <!---------Profile----------->
                 <li class="nav-profile">

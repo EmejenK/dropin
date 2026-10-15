@@ -1,3 +1,8 @@
+<?php
+require 'config/constants.php'
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,20 +26,20 @@
             <p>This is an error message.</p>
         </div>
 
-        <form action="" enctype="multipart/form-data">
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="text" placeholder="Username Name">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Create Password">
-            <input type="password" placeholder="Confirm Passowrd">
+        <form action="<?= ROOT_URL ?>signup-logic.php" enctype="multipart/form-data" method="POST">
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <input type="text" name="username" placeholder="Username Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="createpassword" placeholder="Create Password">
+            <input type="password" name="confirmpassword" placeholder="Confirm Passowrd">
             <div class="form_control">
                 <label for="avatar">Use Avatar</label>
-                <input type="file" id="avatar">
+                <input type="file" name="avatar" id="avatar">
             </div>
 
-            <button type="submit" class="btn"> Sign Up</button>
-            <small>Already have an account?<a href="sign-in.html"> Sign In</a></small>
+            <button type="submit" name="submit" class="btn"> Sign Up</button>
+            <small>Already have an account?<a href="sign-in.php"> Sign In</a></small>
         </form>
     </div>
 </section>
