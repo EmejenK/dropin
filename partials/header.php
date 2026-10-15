@@ -9,7 +9,7 @@ require 'config/database.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Multiple Blog Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?= ROOT_URL ?>css/style.css">
     <!-----Iconscout CDN-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
     <!----Google fonts-->
@@ -19,7 +19,7 @@ require 'config/database.php';
 <body>
     <nav>
         <div class="container nav_container">
-            <a href="index.php"class="nav_logo">DROPIN</a>
+            <a href="<?= ROOT_URL ?>"class="nav_logo">DROPIN</a>
             
             <!------Navigation links--->
             <ul class="nav_items">
@@ -35,7 +35,7 @@ require 'config/database.php';
                         <img src="images/avatar1.png">
                     </div>
                     <ul>
-                        <li><a href="<?= ROOT_URL ?>admin/dashboard.php">Dashboard</a></li>
+                        <li><a href="<?= ROOT_URL ?>admin/index.php">Dashboard</a></li>
                         <li><a href="<?= ROOT_URL ?>logout.php">Logout</a></li>
                     </ul>
                 </li>

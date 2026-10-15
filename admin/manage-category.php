@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Multiple Blog Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-----Iconscout CDN-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
-    <!----Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300;400;500;600;700;800;900&
-    display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav>
-        <div class="container nav_container">
-            <a href="index.html"class="nav_logo">DROPIN</a>
-            
-            <!------Navigation links--->
-            <ul class="nav_items">
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!--<li><a href="sign-in.html">Sign In</a></li>--->
-                
-                <!---------Profile----------->
-                <li class="nav-profile">
-                    <div class="avatar">
-                        <img src="images/avatar1.png">
-                    </div>
-                    <ul>
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="logout.html">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <!---------Humburger----------->
-            <button id="open_nav-btn"><i class="uil uil-bars"></i></button>
-            <button id="close_nav-btn"><i class="uil uil-multiply"></i></button>
-        </div>
-    </nav>
+<?php
+include 'partials/header.php';
+?>
 
     <!--========End Of Navigation==========-->
 
@@ -50,27 +10,27 @@
         <button id="hide_sidebar-btn" class="sidebar_toggle"><i class="uil uil-angle-left"></i></button>
         <aside>
             <ul>
-                <li><a href="add-post.html"><i class="uil uil-pen"></i>
+                <li><a href="add-post.php"><i class="uil uil-pen"></i>
                     <h5>Add Post</h5>
                 </a></li>
 
-                <li><a href="dashboard.html"><i class="uil uil-postcard"></i>
+                <li><a href="index.php"><i class="uil uil-postcard"></i>
                     <h5>Manage Posts</h5>
                 </a></li>
 
-                <li><a href="add-user.html"><i class="uil uil-user-plus"></i>
+                <li><a href="add-user.php"><i class="uil uil-user-plus"></i>
                     <h5>Add User</h5>
                 </a></li>
 
-                <li><a href="manage-users.html"><i class="uil uil-users-alt"></i>
+                <li><a href="manage-users.php"><i class="uil uil-users-alt"></i>
                     <h5>Manage Users</h5>
                 </a></li>
 
-                <li><a href="add-category.html"><i class="uil uil-edit"></i>
+                <li><a href="add-category.php"><i class="uil uil-edit"></i>
                     <h5>Add Category</h5>
                 </a></li>
 
-                <li><a href="manage-category.html" class="active"><i class="uil uil-list-ul"></i>
+                <li><a href="manage-category.php" class="active"><i class="uil uil-list-ul"></i>
                     <h5>Manage Category</h5>
                 </a></li>
             </ul>
@@ -90,18 +50,18 @@
                 <tbody>
                     <tr>
                         <td>Men</td>
-                        <td><a href="edit-category.html" class="btn sm">Edit</a></td>
-                        <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+                        <td><a href="edit-category.php" class="btn sm">Edit</a></td>
+                        <td><a href="delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
                     <tr>
                         <td>Women</td>
-                        <td><a href="edit-category.html" class="btn sm">Edit</a></td>
-                        <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+                        <td><a href="edit-category.php" class="btn sm">Edit</a></td>
+                        <td><a href="delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
                     <tr>
                         <td>Kids</td>
-                        <td><a href="edit-category.html" class="btn sm">Edit</a></td>
-                        <td><a href="delete-category.html" class="btn sm danger">Delete</a></td>
+                        <td><a href="edit-category.php" class="btn sm">Edit</a></td>
+                        <td><a href="delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
 
                 </tbody>
@@ -109,72 +69,9 @@
 
         </main>
 
-
     </div>
 </section>
 
-
-
-<footer>
-    <div class="footer_socials">
-        <a href="#" target="_blank"><i class="uil uil-youtube"></i></a>
-        <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
-        <a href="#" target="_blank"><i class="uil uil-linkedin"></i></a>
-        <a href="#" target="_blank"><i class="uil uil-whatsapp-alt"></i></a>
-    </div>
-
-
-    <div class="container footer_container">
-        <article>
-            <h4>Categories</h4>
-            <ul>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-            </ul>        
-        </article>
-
-        <article>
-            <h4>Support</h4>
-            <ul>
-                <li><a href="#">Online Support</a></li>
-                <li><a href="#">Call Numbers</a></li>
-                <li><a href="#">Emails</a></li>
-                <li><a href="#">Social Support</a></li>
-                <li><a href="#">Location</a></li>
-            </ul>        
-        </article>
-
-        <article>
-            <h4>Blog</h4>
-            <ul>
-                <li><a href="#">Recent</a></li>
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Categories</a></li>
-            </ul>        
-        </article>
-
-        <article>
-            <h4>Permalinks</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>        
-        </article>
-
-    </div>
-
-    <div class="footer_copyright">
-        <small>Copyright &copy; Emejen Arts</small>
-    </div>
-</footer>
-
-
-<script src="main.js"></script>
-
-</body>
-</html>
+<?php
+include '../partials/footer.php';
+?>
