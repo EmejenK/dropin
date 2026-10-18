@@ -21,7 +21,7 @@ if(isset($_POST['submit'])) {
         $_SESSION['signup'] = "Please enter your Username";
     } elseif (!$email) {
         $_SESSION['signup'] = "Please enter a valid Email";
-    } elseif (strlen(!$createpassword) < 8 || strlen($confirmpassword) < 8 ){
+    } elseif (strlen($createpassword) < 8 || strlen($confirmpassword) < 8 ){
         $_SESSION['signup'] = "Password should be 8+ characters";
     } elseif  (!$avatar['name']) {
         $_SESSION['signup'] = "Please add avatar";
