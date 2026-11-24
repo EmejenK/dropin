@@ -89,7 +89,7 @@ if(isset($_POST['submit'])) {
         if(!mysqli_errno($connection)) {
             // redirect to sign in page with a success msg
             $_SESSION['signup-success'] = "Registration successfull please login";
-            header('location' . ROOT_URL . 'sign-in.php');
+            header('location:' . ROOT_URL . 'sign-in.php');
             die();
         }
 

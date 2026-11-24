@@ -2,17 +2,12 @@
 include 'partials/header.php'
 ?>
 
-    <!--========End Of Navigation==========-->
+<!--========End Of Navigation==========-->
 
     <header class="category_title">
         <h2>Category Title</h2>
     </header>
-
-     <!--========End Of header==========-->
-
-
-    
-
+<!--========End Of header==========-->
 
 
 <section class="posts">
@@ -97,8 +92,6 @@ include 'partials/header.php'
         </article>
 
 
-
-   
         <article class="post">
             <div class="post_thumbnail">
                 <img src="images/kids22.png">
